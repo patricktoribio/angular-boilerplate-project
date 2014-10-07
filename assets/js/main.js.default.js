@@ -20,9 +20,10 @@
         templateUrl : 'partials/sample.html',
         controller  : 'pageController'
       })
-
-      // use the HTML5 History API
-          $locationProvider.html5Mode(true);
+      
+      .otherwise({
+        redirectTo: '/'
+      });
 
   });
 
