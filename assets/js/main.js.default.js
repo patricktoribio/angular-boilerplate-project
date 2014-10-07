@@ -4,6 +4,9 @@
 
   // configure our routes
   myApp.config(function($routeProvider, $locationProvider) {
+
+    $locationProvider.hashPrefix('!');
+
     $routeProvider
 
       // route for the home page
